@@ -121,8 +121,7 @@ img {
     margin-right: 50px;
 }
 
-.header {
-    /* Удалить на домашней странице */
+.header.portfolio {
     border-bottom: 1px solid #ECECEC;
 }
 .header .container {
@@ -530,7 +529,7 @@ color: var(--accent-color);
 
 .footer-join,
 .footer-forma {
-    display: block;
+display: block;
 font-weight: 700;
 font-size: 14px;
 line-height: 1.14;
@@ -539,11 +538,24 @@ text-transform: uppercase;
 color: var(--footer-text);
 margin-bottom: 20px;
 }
+
 .footer-forma-btn {
-    display: flex;
+    
+}
+.form-email {
+font-size: 16px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 16px;
+    /* height: 50px; */
+    width: 358px;
+    margin-right: 12px;
+    background-color: #2F303A;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
 }
 .footer-btn {
-display: flex;
+display: inline-flex;
 align-items: center;
 text-align: center;
 padding-top: 10px;
