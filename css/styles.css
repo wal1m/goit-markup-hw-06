@@ -544,6 +544,7 @@ margin-bottom: 20px;
 }
 .form-email {
 font-size: 16px;
+color: rgba(255, 255, 255, 0.6);
     padding-top: 15px;
     padding-bottom: 15px;
     padding-left: 16px;
