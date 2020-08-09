@@ -422,9 +422,15 @@
     <!-- Модальное окно -->
     <div data-modal class="backdrop is-hidden">
       <form action="#" class="modal-form">
+        <button data-modal-close class="madal-close-btn" type="button">
+          <svg class="madal-close-btn-svg">
+            <use href="./images/sprite.svg#close">
+            </use>
+          </svg>
+        </button>
         <h2 class="title modal-form-title">Оставьте свои данные, мы вам перезвоним</h2>
         <div class="modal-form-input-wrapper">
-          <input type="text" name="user-mame" id="user-modal-name" class="modal-form-input" placeholder=" ">
+          <input type="text" name="user-mame" id="user-modal-name" class="modal-form-input" placeholder=" " required>
           <label class="modal-form-label" for="user-modal-name">Имя</label>
           <svg class="modal-form-input-svg">
             <use href="./images/sprite.svg#person">
@@ -432,17 +438,30 @@
           </svg>
         </div>
         <div class="modal-form-input-wrapper">
-          <input type="tel" name="user-tel" id="user-modal-tel" class="modal-form-input" placeholder=" ">
+          <input type="tel" name="user-tel" id="user-modal-tel" class="modal-form-input" placeholder=" " required>
           <label class="modal-form-label" for="user-modal-tel">Телефон</label>
+          <svg class="modal-form-input-svg">
+            <use href="./images/sprite.svg#phone">
+            </use>
+          </svg>
         </div>
         <div class="modal-form-input-wrapper">
-          <input type="email" name="user-email" id="user-modal-email" class="modal-form-input" placeholder=" ">
+          <input type="email" name="user-email" id="user-modal-email" class="modal-form-input" placeholder=" " required>
           <label class="modal-form-label" for="user-modal-email">Почта</label>
+          <svg class="modal-form-input-svg">
+            <use href="./images/sprite.svg#email">
+            </use>
+          </svg>
         </div>
         <textarea name="user-message" class="modal-form-message" placeholder="Комментарий"></textarea>
         <label class="madal-form-option-label">
-        <input type="checkbox" name="policy" value="accept-policy" class="modal-form-checkbox">
-        <span class="modal-form-custom-checkbox"></span>
+        <input class="modal-form-checkbox" type="checkbox" name="policy" value="accept-policy">
+        <span class="modal-form-custom-checkbox">
+          <svg class="modal-form-custom-checkbox-svg">
+            <use href="./images/sprite.svg#check">
+            </use>
+          </svg>
+        </span>
         <span class="modal-form-option-span">Соглашаюсь с рассылкой и принимаю <a class="modarn-form-policy-link" href="#">Условия договора</a></span>
         </label>
         <button type="submit" class="madal-btn btn">Отправить</button>
