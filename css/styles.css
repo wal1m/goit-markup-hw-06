@@ -735,7 +735,6 @@ align-items: center;
     padding-bottom: 12px;
     padding-left: 16px;
     margin-bottom: 20px;
-
     resize: none;
 }
 .modal-form-input,
@@ -771,6 +770,9 @@ align-items: center;
     transform: translate(-26px, -38px);
     color: var(--accent-color);
     }
+.modal-form-input:focus ~ .modal-form-input-svg{
+    fill: var(--accent-color);
+}
     .modarn-form-policy-link {
         text-decoration-line: underline;
     }
